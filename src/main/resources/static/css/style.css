@@ -93,3 +93,10 @@ a {
     flex-direction: row;
     margin: 10px 0;
 }
+
+#comment-content form div {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
