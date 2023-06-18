@@ -21,8 +21,8 @@ public class OpinionController {
     @GetMapping("/opinion")
     public String opinionPage (Model model) {
         List<OpinionModel> opinions = opinionService.getAllOpinions();
-/*        model.addAttribute("opinion", new OpinionModel());
-        model.addAttribute("opinions", opinions);*/
+        model.addAttribute("opinion", new OpinionModel());
+        model.addAttribute("opinions", opinions);
         return "redirect:/opinion";
     }
 
@@ -30,7 +30,7 @@ public class OpinionController {
     public String opinionSubmit (@ModelAttribute OpinionModel opinionModel, Model model) {
         opinionService.saveOpinion(opinionModel);
 
-/*        model.addAttribute("opinion", opinionModel);*/
+        model.addAttribute("opinion", opinionModel);
         return "redirect:/opinion";
     }
 }
