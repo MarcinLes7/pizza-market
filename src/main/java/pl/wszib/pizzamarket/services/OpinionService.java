@@ -16,7 +16,7 @@ public class OpinionService {
         this.opinionRepository = opinionRepository;
     }
 
-    public void saveOpinion(OpinionModel opinionModel){
+    public void saveOpinion(OpinionModel opinionModel) {
         OpinionEntity opinionEntity = OpinionMapper.toEntity(opinionModel);
         opinionRepository.save(opinionEntity);
     }
